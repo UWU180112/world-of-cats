@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакти - Світ Котів</title>
+    <link rel="stylesheet" href="style.css"> </head>
+<body>
+
+    <header>
+        <h1>Ласкаво просимо до Світу Котів!</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="about.html">Про котів</a></li>
+                <li><a href="breeds.html">Породи</a></li>
+                <li><a href="care.html">Догляд</a></li>
+                <li><a href="contact.html">Контакти</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="contact-info">
+            <h2>Зв'яжіться з нами!</h2>
+            <p>Маєте запитання, пропозиції або просто хочете поділитися своєю любов'ю до котів? Ми завжди раді спілкуванню!</p>
+
+            <div class="contact-details">
+                <p><strong>Електронна пошта:</strong> <a href="gmail.com">gmail.com</a></p>
+                <p><strong>Телефон:</strong> <a href="tel:+380-xx-xxx-xx-xx">+380-xx-xxx-xx-xx</a></p>
+                <p><strong>Адреса:</strong> Україна</p>
+            </div>
+
+            <p class="social-text">Слідкуйте за нами в соціальних мережах:</p>
+            <div class="social-links">
+                <a href="#" class="social-icon facebook">Facebook</a>
+                <a href="#" class="social-icon instagram">Instagram</a>
+                <a href="#" class="social-icon twitter">Twitter</a>
+            </div>
+        </section>
+
+        <section id="contact-form-section">
+            <h2>Надішліть нам повідомлення</h2>
+            <form action="#" method="POST" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Ваше ім'я:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Ваша електронна пошта:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Тема:</label>
+                    <input type="text" id="subject" name="subject">
+                </div>
+                <div class="form-group">
+                    <label for="message">Повідомлення:</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+                </div>
+                <button type="submit" class="submit-button">Надіслати</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Світ Котів. Усі права захищено.</p>
+    </footer>
+
+</body>
+</html>

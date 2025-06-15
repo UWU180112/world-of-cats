@@ -1,0 +1,539 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0; 
+    padding: 0; 
+    background-color: #f4f4f4; 
+    color: #333; 
+    line-height: 1.6; 
+}
+
+
+header {
+    background-color: #4CAF50; 
+    color: white;
+    padding: 1em 0; 
+    text-align: center; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); 
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em; 
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3); 
+}
+
+
+nav ul {
+    list-style: none; 
+    padding: 0;
+    margin: 1em 0 0 0; 
+    display: flex; 
+    justify-content: center; 
+    flex-wrap: wrap; 
+}
+
+nav ul li {
+    margin: 0 15px; 
+}
+
+nav ul li a {
+    color: white; 
+    text-decoration: none;
+    font-weight: bold; 
+    padding: 5px 10px; 
+    border-radius: 5px; 
+    transition: background-color 0.3s ease; 
+}
+
+nav ul li a:hover {
+    background-color: #388E3C; 
+}
+
+
+main {
+    padding: 20px;
+    max-width: 1200px; 
+    margin: 20px auto; 
+    background-color: #ffffff; 
+    border-radius: 8px; 
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+
+#hero {
+    text-align: center;
+    padding: 40px 20px; 
+    background-color: #e8f5e9;
+    border-radius: 8px;
+    margin-bottom: 30px; 
+}
+
+#hero h2 {
+    font-size: 2.2em;
+    color: #2E7D32;
+    margin-bottom: 15px;
+}
+
+#hero p {
+    font-size: 1.1em;
+    max-width: 700px;
+    margin: 0 auto 20px auto; 
+}
+
+#hero img {
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+    display: block; 
+    margin: 0 auto; 
+}
+
+
+#features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; 
+    gap: 20px; 
+    text-align: center;
+    padding: 20px 0;
+}
+
+.feature-item {
+    background-color: #f9f9f9; 
+    border: 1px solid #ddd; 
+    border-radius: 8px;
+    padding: 20px;
+    flex: 1; 
+    min-width: 280px; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.feature-item:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+}
+
+.feature-item h3 {
+    color: #4CAF50; 
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+
+footer {
+    background-color: #333; 
+    color: white; 
+    text-align: center; 
+    padding: 1.5em 0;
+    margin-top: 30px; 
+    font-size: 0.9em; 
+}
+
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    nav ul {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 5px 0; 
+    }
+
+    #hero h2 {
+        font-size: 1.8em;
+    }
+
+    .feature-item {
+        min-width: 90%;
+    }
+}
+
+/* Додаткові стилі для about.html */
+#about-cats-intro,
+#cat-history {
+    padding: 30px;
+    background-color: #fcfcfc; /* Майже білий фон */
+    border-radius: 8px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08); /* Легка тінь */
+}
+
+#about-cats-intro h2,
+#cat-history h2 {
+    color: #2E7D32; /* Темніший зелений */
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#about-cats-intro p,
+#cat-history p {
+    text-align: justify; /* Вирівнювання по ширині */
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+#about-cats-intro img {
+    max-width: 80%; /* Зображення на сторінці "Про котів" */
+    height: auto;
+    display: block; /* Прибираємо зайві відступи */
+    margin: 25px auto; /* Центруємо зображення та додаємо відступи */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Стилі для цікавих фактів - ми вже їх додавали, але переконайтеся, що вони є */
+#cat-facts {
+    padding: 30px;
+    background-color: #e8f5e9; /* Світло-зелений фон */
+    border-radius: 8px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+#cat-facts h2 {
+    color: #2E7D32;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#cat-facts ol {
+    margin-left: 25px;
+    padding-left: 0;
+    color: #555;
+    font-size: 1.1em;
+}
+
+#cat-facts ol li {
+    margin-bottom: 10px;
+    padding-left: 5px;
+}
+
+#cat-facts ol li::marker {
+    color: #4CAF50;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+#breeds-intro {
+    padding: 30px;
+    background-color: #fcfcfc;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+#breeds-intro h2 {
+    color: #2E7D32;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#breeds-intro p {
+    text-align: justify;
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+#common-breeds h2 {
+    color: #2E7D32;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.breed-grid {
+    display: grid; /* Використовуємо CSS Grid для сітки */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Автоматично створюємо стовпці */
+    gap: 25px; /* Відстань між елементами сітки */
+}
+
+.breed-card {
+    background-color: #ffffff;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    overflow: hidden; /* Обрізаємо все, що виходить за межі */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding-bottom: 20px; /* Відступ внизу картки */
+}
+
+.breed-card:hover {
+    transform: translateY(-8px); /* Трохи піднімаємо картку при наведенні */
+    box-shadow: 0 6px 16px rgba(0,0,0,0.12); /* Посилюємо тінь */
+}
+
+.breed-card img {
+    width: 100%; /* Зображення займає всю ширину картки */
+    height: 200px; /* Фіксована висота зображень */
+    object-fit: cover; /* Зображення заповнює простір, обрізаючи зайве */
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 15px;
+}
+
+.breed-card h3 {
+    color: #4CAF50;
+    font-size: 1.8em;
+    margin: 10px 0;
+    padding: 0 15px; /* Відступи для тексту заголовка */
+}
+
+.breed-card p {
+    font-size: 1em;
+    color: #666;
+    padding: 0 15px; /* Відступи для тексту опису */
+    line-height: 1.5;
+}
+
+/* Адаптивність для сітки порід на малих екранах */
+@media (max-width: 600px) {
+    .breed-grid {
+        grid-template-columns: 1fr; /* На малих екранах - один стовпець */
+    }
+}
+
+/* Стилі для розділу "Догляд" */
+#care-intro {
+    padding: 30px;
+    background-color: #e8f5e9; /* Світло-зелений фон */
+    border-radius: 8px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+#care-intro h2 {
+    color: #2E7D32;
+    font-size: 2.2em;
+    margin-bottom: 15px;
+}
+
+#care-intro p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+}
+
+#care-intro img {
+    max-width: 70%; /* Зображення на сторінці "Догляд" */
+    height: auto;
+    display: block;
+    margin: 25px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.care-section {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    padding: 30px;
+    margin-bottom: 25px;
+}
+
+.care-section h3 {
+    color: #4CAF50;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 10px;
+}
+
+.care-section p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.care-section ul {
+    list-style: disc inside; /* Маркери у вигляді кіл */
+    margin: 0;
+    padding-left: 20px;
+}
+
+.care-section ul li {
+    margin-bottom: 8px;
+    font-size: 1em;
+    color: #444;
+}
+
+/* Медіа-запити для адаптивності на менших екранах */
+@media (max-width: 768px) {
+    #care-intro h2 {
+        font-size: 1.8em;
+    }
+
+    #care-intro img {
+        max-width: 90%;
+    }
+
+    .care-section h3 {
+        font-size: 1.5em;
+    }
+}
+
+/* Стилі для розділу "Контакти" - загальний блок інформації */
+#contact-info {
+    padding: 30px;
+    background-color: #e8f5e9; /* Світло-зелений фон */
+    border-radius: 8px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+#contact-info h2 {
+    color: #2E7D32;
+    font-size: 2.2em;
+    margin-bottom: 15px;
+}
+
+#contact-info p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.contact-details p {
+    font-size: 1.1em;
+    margin-bottom: 8px;
+}
+
+.contact-details a {
+    color: #4CAF50; /* Колір посилань */
+    text-decoration: none; /* Прибираємо підкреслення */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.contact-details a:hover {
+    color: #388E3C; /* Змінюємо колір при наведенні */
+    text-decoration: underline;
+}
+
+.social-text {
+    margin-top: 30px;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Відстань між іконками */
+    margin-top: 15px;
+    flex-wrap: wrap; /* Дозволяє перенос на новий рядок */
+}
+
+.social-icon {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.social-icon:hover {
+    background-color: #388E3C;
+    transform: translateY(-3px); /* Невеликий підйом при наведенні */
+}
+
+/* Стилі для секції з формою зворотного зв'язку */
+#contact-form-section {
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    margin-bottom: 25px;
+}
+
+#contact-form-section h2 {
+    color: #2E7D32;
+    font-size: 2.2em;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block; /* Кожен label на новому рядку */
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #444;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: calc(100% - 20px); /* Ширина 100% мінус padding */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box; /* Включаємо padding і border в ширину */
+}
+
+.contact-form textarea {
+    resize: vertical; /* Дозволяємо змінювати розмір textarea по вертикалі */
+}
+
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form textarea:focus {
+    border-color: #4CAF50; /* Підсвічуємо рамку при фокусі */
+    outline: none; /* Прибираємо стандартний outline */
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5); /* Додаємо тінь при фокусі */
+}
+
+.submit-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer; /* Змінюємо курсор при наведенні */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: block; /* Робимо кнопку блочним елементом */
+    margin: 20px auto 0 auto; /* Центруємо кнопку */
+}
+
+.submit-button:hover {
+    background-color: #388E3C;
+    transform: translateY(-2px);
+}
+
+/* Медіа-запити для адаптивності на малих екранах */
+@media (max-width: 768px) {
+    #contact-info h2, #contact-form-section h2 {
+        font-size: 1.8em;
+    }
+
+    .social-links {
+        flex-direction: column; /* Іконки соціальних мереж у стовпчик */
+        align-items: center;
+    }
+
+    .social-icon {
+        width: 80%; /* Збільшуємо ширину кнопок */
+        margin-bottom: 10px; /* Відступ між кнопками */
+    }
+}
